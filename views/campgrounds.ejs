@@ -1,0 +1,8 @@
+<h1>Reviews will go here</h1>
+
+<% campgrounds.forEach(function(campground){ %>
+	<div>
+		<strong><%= campground["name"] %></strong>
+		<img src="<%= campground["image"] %>">
+	</div>
+<% }) %>
