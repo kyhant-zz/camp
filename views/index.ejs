@@ -13,10 +13,14 @@
 					<div class="caption">
 						<strong><%= campground["name"] %></strong>
 					</div>
+					<p>
+						<a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info</a>
+					</p>
 				</div>
 			</div>
 		<% }) %>
 	</div>
 </div>
-	<% include partials/footer %>
+
+<% include partials/footer %>
 	
