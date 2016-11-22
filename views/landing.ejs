@@ -1,5 +1,17 @@
-<h1>This is the landing page template!</h1>
+<% include partials/header %>
 
-<p>Welcome to YelpCamp</p>
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			<h1>This is the landing page template!</h1>
 
-<button><a href="/campgrounds">View All Campgrounds</a></button>
+			<p>Welcome to YelpCamp</p>
+			<a href="/campgrounds/new" class="btn btn-primary btn-large">Leave Review</a>
+		</div>
+	</header>
+
+<a href="/campgrounds" class="btn btn-primary btn-large">View All Campgrounds</a>
+
+
+</div>
+<% include partials/footer %>

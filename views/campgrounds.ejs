@@ -1,8 +1,22 @@
-<h1>Reviews will go here</h1>
+<% include partials/header %>
 
-<% campgrounds.forEach(function(campground){ %>
-	<div>
-		<strong><%= campground["name"] %></strong>
-		<img src="<%= campground["image"] %>">
+<div class="container">
+	<header class="jumbotron">
+		<h1>Reviews will go here</h1>
+		<p>View our hand-picked campsites</p>
+	</header>
+		<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+		<% campgrounds.forEach(function(campground){ %>
+			<div class="col-md-3 col-sm-6 review">
+				<div class="thumbnail">
+					<img src="<%= campground["image"] %>">
+					<div class="caption">
+						<strong><%= campground["name"] %></strong>
+					</div>
+				</div>
+			</div>
+		<% }) %>
 	</div>
-<% }) %>
+</div>
+	<% include partials/footer %>
+	
